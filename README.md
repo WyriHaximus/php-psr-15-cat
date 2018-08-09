@@ -2,7 +2,6 @@
 
 [![Total Downloads](https://poser.pugx.org/WyriHaximus/psr-15-cat/downloads.png)](https://packagist.org/packages/WyriHaximus/psr-15-cat/stats)
 [![License](https://poser.pugx.org/WyriHaximus/psr-15-cat/license.png)](https://packagist.org/packages/wyrihaximus/psr-15-cat)
-[![PHP 7 ready](http://php7ready.timesplinter.ch/WyriHaximus/php-psr-15-cat/badge.svg)](https://travis-ci.org/WyriHaximus/php-psr-15-cat)
 
 ### Installation ###
 
