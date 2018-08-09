@@ -18,6 +18,10 @@ composer require wyrihaximus/psr-15-cat
 $middleware = new CatMiddleware();
 ```
 
+## Result ##
+
+![X-Cat](result.png)
+
 ## Inspired by ##
 
 [`nixCraft`](https://twitter.com/nixcraft/status/1027639812378054656)
