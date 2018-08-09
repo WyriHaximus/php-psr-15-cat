@@ -1,0 +1,27 @@
+{
+  "name": "wyrihaximus/psr-15-cat",
+  "description": "CAT!",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Cees-Jan Kiewiet",
+      "email": "ceesjank@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.1",
+    "psr/http-server-middleware": "^1.0",
+    "zendframework/zend-diactoros": "^1.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "WyriHaximus\\Psr15\\Cat\\": "src/"
+    }
+  },
+  "config": {
+    "sort-packages": true,
+    "platform": {
+      "php": "7.1"
+    }
+  }
+}
