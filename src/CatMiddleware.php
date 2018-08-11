@@ -22,7 +22,7 @@ final class CatMiddleware implements MiddlewareInterface
     public function __construct()
     {
         foreach (glob(dirname(__DIR__) . DIRECTORY_SEPARATOR . 'etc' . DIRECTORY_SEPARATOR . '*.cat') as $cat) {
-            $this->cats[] = explode("\t", str_replace(["\r", "\n"], "\t", file_get_contents($cat)));
+            $this->cats[] = file($cat, FILE_IGNORE_NEW_LINES);
         }
         $this->catCount = count($this->cats);
     }
