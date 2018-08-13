@@ -12,9 +12,19 @@ use Zend\Diactoros\ServerRequest;
 
 final class CatMiddlewareTest extends TestCase
 {
-    public function testHeader()
+    public function providePreload()
     {
-        $cats = new CatMiddleware();
+        yield [true];
+        yield [false];
+    }
+
+    /**
+     * @param bool $preload
+     * @dataProvider providePreload
+     */
+    public function testHeader(bool $preload)
+    {
+        $cats = new CatMiddleware($preload);
         $response = $cats->process(new ServerRequest(), new class() implements RequestHandlerInterface {
             public function handle(ServerRequestInterface $request): ResponseInterface
             {
