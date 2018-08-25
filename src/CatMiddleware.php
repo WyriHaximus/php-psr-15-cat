@@ -12,16 +12,13 @@ final class CatMiddleware implements MiddlewareInterface
 {
     const HEADER = 'X-Cat';
 
-    /**
-     * @var string[][]
-     */
+    /** @var string[][] */
     private $cats = [];
 
-    /**
-     * @var string[]
-     */
+    /** @var string[] */
     private $catsList = [];
 
+    /** @var int  */
     private $catCount = 0;
 
     public function __construct(bool $preload = false)
