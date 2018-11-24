@@ -84,6 +84,6 @@
   },
   "require-dev": {
     "api-clients/test-utilities": "^4.3",
-    "zendframework/zend-diactoros": "^1.8"
+    "zendframework/zend-diactoros": "^2.0"
   }
 }
