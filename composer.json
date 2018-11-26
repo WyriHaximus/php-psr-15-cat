@@ -9,9 +9,14 @@
     }
   ],
   "require": {
-    "php": "^7.1",
+    "php": "^7.2",
     "psr/http-server-middleware": "^1.0",
     "wyrihaximus/psr-7-ascii-headers": "^1.0"
+  },
+  "require-dev": {
+    "api-clients/cs-fixer-config": "^1.1",
+    "api-clients/test-utilities": "^5.2",
+    "zendframework/zend-diactoros": "^2.0"
   },
   "autoload": {
     "psr-4": {
@@ -26,7 +31,7 @@
   "config": {
     "sort-packages": true,
     "platform": {
-      "php": "7.1"
+      "php": "7.2"
     }
   },
   "scripts": {
@@ -81,9 +86,5 @@
     "ci-coverage": [
       "if [ -f ./build/logs/clover.xml ]; then wget https://scrutinizer-ci.com/ocular.phar && php ocular.phar code-coverage:upload --format=php-clover ./build/logs/clover.xml; fi"
     ]
-  },
-  "require-dev": {
-    "api-clients/test-utilities": "^4.3",
-    "zendframework/zend-diactoros": "^2.0"
   }
 }

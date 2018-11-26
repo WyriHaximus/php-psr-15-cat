@@ -10,6 +10,9 @@ use WyriHaximus\Psr15\Cat\CatMiddleware;
 use Zend\Diactoros\Response;
 use Zend\Diactoros\ServerRequest;
 
+/**
+ * @internal
+ */
 final class CatMiddlewareTest extends TestCase
 {
     public function providePreload()
@@ -22,7 +25,7 @@ final class CatMiddlewareTest extends TestCase
      * @param bool $preload
      * @dataProvider providePreload
      */
-    public function testHeader(bool $preload)
+    public function testHeader(bool $preload): void
     {
         $cats = new CatMiddleware($preload);
         $response = $cats->process(new ServerRequest(), new class() implements RequestHandlerInterface {
