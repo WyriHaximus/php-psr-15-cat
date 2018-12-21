@@ -4198,16 +4198,16 @@
         },
         {
             "name": "zendframework/zend-diactoros",
-            "version": "2.0.1",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-diactoros.git",
-                "reference": "a22d63fccbf1236903c2dbcd5f927f952667d749"
+                "reference": "f8c3cb729c6d416343a855e8b4be9f02356c6d7a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/a22d63fccbf1236903c2dbcd5f927f952667d749",
-                "reference": "a22d63fccbf1236903c2dbcd5f927f952667d749",
+                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/f8c3cb729c6d416343a855e8b4be9f02356c6d7a",
+                "reference": "f8c3cb729c6d416343a855e8b4be9f02356c6d7a",
                 "shasum": ""
             },
             "require": {
@@ -4230,8 +4230,8 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.0.x-dev",
-                    "dev-develop": "2.1.x-dev",
+                    "dev-master": "2.1.x-dev",
+                    "dev-develop": "2.2.x-dev",
                     "dev-release-1.8": "1.8.x-dev"
                 }
             },
@@ -4260,7 +4260,7 @@
                 "psr",
                 "psr-7"
             ],
-            "time": "2018-12-03T16:20:17+00:00"
+            "time": "2018-12-20T16:57:16+00:00"
         }
     ],
     "aliases": [],
