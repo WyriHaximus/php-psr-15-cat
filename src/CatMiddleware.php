@@ -23,11 +23,11 @@ final class CatMiddleware implements MiddlewareInterface
 
     public function __construct(bool $preload = false)
     {
-        foreach (\glob(\dirname(__DIR__) . DIRECTORY_SEPARATOR . 'etc' . DIRECTORY_SEPARATOR . '*.cat') as $cat) {
+        foreach (\glob(\dirname(__DIR__) . \DIRECTORY_SEPARATOR . 'etc' . \DIRECTORY_SEPARATOR . '*.cat') as $cat) {
             $this->catsList[] = $cat;
             $contents = [];
             if ($preload) {
-                $contents = \file($cat, FILE_IGNORE_NEW_LINES);
+                $contents = \file($cat, \FILE_IGNORE_NEW_LINES);
             }
             $this->cats[$cat] = $contents;
         }
@@ -40,7 +40,7 @@ final class CatMiddleware implements MiddlewareInterface
 
         $catName = $this->catsList[\random_int(0, $this->catCount - 1)];
         if (\count($this->cats[$catName]) === 0) {
-            $this->cats[$catName] = \file($catName, FILE_IGNORE_NEW_LINES);
+            $this->cats[$catName] = \file($catName, \FILE_IGNORE_NEW_LINES);
         }
 
         return asciiArtHeaders($response, self::HEADER, ...$this->cats[$catName]);
